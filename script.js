@@ -18,6 +18,7 @@ todo   Consegna:
 
 // DATI GENERALI
 
+/*
 const firstReplacerName = "Fizz";
 let FizzMultiplier = 3;
 const secondReplacerName = "Buzz";
@@ -27,7 +28,7 @@ let FizzBuzzMultiplierCombo = (3, 5); //non mi serve
 
 //Todo
 //*  programma che stampa i numeri da 1 a 100
-/*
+
 for(let i = 0; i <= 100; i++) {
     // se il numero è multiplo sia di 3 che 5:
     if (i % FizzMultiplier === 0 && i % BuzzMultiplier === 0 ) {
@@ -52,19 +53,22 @@ for(let i = 0; i <= 100; i++) {
 }
 */
 
-// dichiaro una variabile vuota:
-let BosseswishedOutput = "";
+const firstReplacerName = "Fizz";
+let FizzMultiplier = 3;
+const secondReplacerName = "Buzz";
+let BuzzMultiplier = 5;
+
 for (let i = 0; i <= 100; i++) {
+  // dichiaro una variabile vuota:
+  let BosseswishedOutput = "";
   // se il numero è multiplo di 3:
   if (i % FizzMultiplier === 0) {
     BosseswishedOutput += firstReplacerName;
   }
   // se il numero è multiplo di 5:
-  else if (i % BuzzMultiplier === 0) {
+  if (i % BuzzMultiplier === 0) {
     BosseswishedOutput += secondReplacerName;
-  } else {
-    console.log(i);
   }
-}
 
-console.log(BosseswishedOutput);
+  console.log(BosseswishedOutput || i);
+}
