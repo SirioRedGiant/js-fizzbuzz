@@ -70,9 +70,10 @@ for (let i = 0; i <= 100; i++) {
     BosseswishedOutput += secondReplacerName;
   }
 
-  //  console.log(BosseswishedOutput || i);
-  if (!(i % FizzMultiplier === 0) && !(i % BuzzMultiplier === 0)) {
+  //  oppure questa => console.log(BosseswishedOutput || i);
+  if (BosseswishedOutput !== '') {
     console.log(BosseswishedOutput);
+  }
    else {
     console.log(i);
   }
