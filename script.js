@@ -19,11 +19,18 @@ todo   Consegna:
 
 // DATI GENERALI
 
-const firstReplacerName = Fizz
+const firstReplacerName = "Fizz"
 let FizzMultiplier = 3
-const secondReplacerName = Buzz
+const secondReplacerName = "Buzz"
 let BuzzMultiplier = 5
-const comboReplacerName = FizzBuzz
+const comboReplacerName = "FizzBuzz"
 let FizzBuzzMultiplierCombo = (3, 5)
+
+//Todo
+//  programma che stampa i numeri da 1 a 100
+
+for(let i = 0; i >= 100; i++) {
+    if i % 3 == 0
+}
 
 
