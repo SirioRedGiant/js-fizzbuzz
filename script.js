@@ -57,20 +57,10 @@ const firstReplacerName = "Fizz";
 let FizzMultiplier = 3;
 const secondReplacerName = "Buzz";
 let BuzzMultiplier = 5;
-/*
-let results = [];
-for (...) {
-  let val = "";
-  if (i % ... === 0) val += "...";
-  if (i % ... === 0) val += "...";
-  results.push({ numero: i, risultato: val || i });
-}
-console.table(results);
-*/
+
 
 //! formattazione dei log
-//? tabella
-let results = []
+
 
 for (let i = 0; i <= 100; i++) {
   // dichiaro una variabile vuota:
@@ -86,14 +76,9 @@ for (let i = 0; i <= 100; i++) {
   //  oppure questa => console.log(BosseswishedOutput || i);
   if (BosseswishedOutput !== '') {
     console.log({BosseswishedOutput});
-    //todo: salvo il valore nella tabella
-    results.push({risultato: BosseswishedOutput });
   }
    else {
     console.log(i);
-    //todo: salvo il valore nella tabella
-    results.push({risultato: i })
   }
 }
-// Visualizzazione finale della tabella
-console.table(results);
+
