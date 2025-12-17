@@ -94,7 +94,8 @@ for (let i = 0; i <= 100; i++) {
     console.log(`%c${BosseswishedOutput}`, currentStyle);
   } else {
     console.log(i);
-  }
+//  => console.log(BosseswishedOutput || i); era un altra possibile soluzione  
+}
 }
 
-//  => console.log(BosseswishedOutput || i); oppure queste condizioni sotto
+
