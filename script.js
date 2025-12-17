@@ -24,13 +24,32 @@ let FizzMultiplier = 3
 const secondReplacerName = "Buzz"
 let BuzzMultiplier = 5
 const comboReplacerName = "FizzBuzz"
-let FizzBuzzMultiplierCombo = (3, 5)
+let FizzBuzzMultiplierCombo = (3, 5) //non mi serve
 
 //Todo
-//  programma che stampa i numeri da 1 a 100
+//*  programma che stampa i numeri da 1 a 100
 
-for(let i = 0; i >= 100; i++) {
-    if i % 3 == 0
+for(let i = 0; i <= 100; i++) {
+    // se il numero è multiplo sia di 3 che 5:
+    if (i % FizzMultiplier === 0 && i % BuzzMultiplier === 0 ) {
+        console.log(comboReplacerName)
+        console.log("è multiplo di entrambi i numeri")
+    }
+    // se il numero è multiplo di 3:
+    else if (i % FizzMultiplier === 0) {
+        console.log(firstReplacerName)
+        console.log("è multiplo di 3")
+    }
+    // se il numero è multiplo di 5:
+    else if (i % BuzzMultiplier === 0) {
+        console.log(secondReplacerName)
+        console.log("è multiplo di 5")
+    }
+    // se il numero non è multiplo di entrambi (già escluso dalle precedenti condizioni)
+    else {
+        console.log(i)
+        console.log("non è multiplo di nessuno numero fornito")
+    }
 }
 
 
