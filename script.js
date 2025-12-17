@@ -85,14 +85,14 @@ for (let i = 0; i <= 100; i++) {
   }
   //  oppure questa => console.log(BosseswishedOutput || i);
   if (BosseswishedOutput !== '') {
-    console.log(BosseswishedOutput);
+    console.log({BosseswishedOutput});
     //todo: salvo il valore nella tabella
-    results.push({ ciclo: i, risultato: BosseswishedOutput });
+    results.push({risultato: BosseswishedOutput });
   }
    else {
     console.log(i);
     //todo: salvo il valore nella tabella
-    results.push({ ciclo: i, risultato: i })
+    results.push({risultato: i })
   }
 }
 // Visualizzazione finale della tabella
