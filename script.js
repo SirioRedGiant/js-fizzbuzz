@@ -23,7 +23,7 @@ const firstReplacerName = "Fizz"
 let FizzMultiplier = 3
 const secondReplacerName = "Buzz"
 let BuzzMultiplier = 5
-const comboReplacerName = "FizzBuzz"
+const comboReplacerName = "Fizz" + "Buzz"
 let FizzBuzzMultiplierCombo = (3, 5) //non mi serve
 
 //Todo
