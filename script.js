@@ -16,15 +16,14 @@ todo   Consegna:
 !   Buon lavoro e buon divertimento! 🙂
 */
 
-
 // DATI GENERALI
 
-const firstReplacerName = "Fizz"
-let FizzMultiplier = 3
-const secondReplacerName = "Buzz"
-let BuzzMultiplier = 5
-const comboReplacerName = "Fizz" + "Buzz"
-let FizzBuzzMultiplierCombo = (3, 5) //non mi serve
+const firstReplacerName = "Fizz";
+let FizzMultiplier = 3;
+const secondReplacerName = "Buzz";
+let BuzzMultiplier = 5;
+const comboReplacerName = "Fizz" + "Buzz";
+let FizzBuzzMultiplierCombo = (3, 5); //non mi serve
 
 //Todo
 //*  programma che stampa i numeri da 1 a 100
@@ -50,23 +49,22 @@ for(let i = 0; i <= 100; i++) {
         console.log(i)
         
     }
+}
 */
-for(let i = 0; i <= 100; i++) {
-    // se il numero è multiplo di 3:
-    if (i % FizzMultiplier === 0) {
-        console.log(firstReplacerName)
-        
-    }
-    // se il numero è multiplo di 5:
-    else if (i % BuzzMultiplier === 0) {
-        console.log(secondReplacerName)
-        
-    }
-    // se il numero non è multiplo di entrambi (già escluso dalle precedenti condizioni)
-    else if (!(i % FizzMultiplier === 0) && !(i % BuzzMultiplier === 0)){
-        console.log(i)        
-    }
 
+// dichiaro una variabile vuota:
+let BosseswishedOutput = "";
+for (let i = 0; i <= 100; i++) {
+  // se il numero è multiplo di 3:
+  if (i % FizzMultiplier === 0) {
+    BosseswishedOutput += firstReplacerName;
+  }
+  // se il numero è multiplo di 5:
+  else if (i % BuzzMultiplier === 0) {
+    BosseswishedOutput += secondReplacerName;
+  } else {
+    console.log(i);
+  }
 }
 
-
+console.log(BosseswishedOutput);
