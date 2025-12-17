@@ -33,22 +33,22 @@ for(let i = 0; i <= 100; i++) {
     // se il numero è multiplo sia di 3 che 5:
     if (i % FizzMultiplier === 0 && i % BuzzMultiplier === 0 ) {
         console.log(comboReplacerName)
-        console.log("è multiplo di entrambi i numeri")
+        
     }
     // se il numero è multiplo di 3:
     else if (i % FizzMultiplier === 0) {
         console.log(firstReplacerName)
-        console.log("è multiplo di 3")
+        
     }
     // se il numero è multiplo di 5:
     else if (i % BuzzMultiplier === 0) {
         console.log(secondReplacerName)
-        console.log("è multiplo di 5")
+        
     }
     // se il numero non è multiplo di entrambi (già escluso dalle precedenti condizioni)
     else {
         console.log(i)
-        console.log("non è multiplo di nessuno numero fornito")
+        
     }
 }
 
