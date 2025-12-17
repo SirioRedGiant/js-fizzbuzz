@@ -58,9 +58,7 @@ let FizzMultiplier = 3;
 const secondReplacerName = "Buzz";
 let BuzzMultiplier = 5;
 
-
 //! formattazione dei log
-
 
 for (let i = 0; i <= 100; i++) {
   // dichiaro una variabile vuota:
@@ -73,12 +71,12 @@ for (let i = 0; i <= 100; i++) {
   if (i % BuzzMultiplier === 0) {
     BosseswishedOutput += secondReplacerName;
   }
+
   //  oppure questa => console.log(BosseswishedOutput || i);
   if (BosseswishedOutput !== '') {
-    console.log({BosseswishedOutput});
+    console.log(BosseswishedOutput);
   }
    else {
     console.log(i);
   }
 }
-
